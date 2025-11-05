@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Qayoom Mangi | Data Scientist</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resume">Resume</a></li>
+
+    </ul>
+  </nav>
+
+ <!-- Hero Section -->
+<section id="home" class="section hero">
+  <canvas id="stars"></canvas>
+  <div class="content">
+
+    <img src="{{ url_for('static', filename='images/portimage.jpg') }}" class="hero-img">
+
+    <h1>Hi, I'm <span>Abdul Qayoom Mangi</span></h1>
+    <h2>Data Science Enthusiast & Software Engineer</h2>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+<!--Resume-->
+<section id="resume" class="section">
+  <h2>My Resume</h2>
+  <p>You can view or download my resume below:</p>
+
+  <a href="{{ url_for('static', filename='updated resume.pdf') }}" 
+     class="btn" target="_blank">
+     📄 View My Resume
+  </a>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+<p class="intro-text">
+  Welcome! I'm Abdul Qayoom, a passionate 2nd-year Software Engineering student at Mehran UET Jamshoro, Pakistan,
+  deeply immersed in the world of Artificial Intelligence and Data Science.
+
+  My technical foundation is solid, encompassing Java and SQL for robust data management, alongside Python where
+  I leverage essential libraries like NumPy, Pandas, Matplotlib, and Seaborn for powerful data cleaning, analysis
+  and visualization. I have practical experience with scikit-learn (sklearn) for basic Machine Learning implementations
+  and use Flask to bring simple data-driven applications to life.
+
+  I understand the Software Development Life Cycle (SDLC) and apply its models effectively. I'm actively seeking
+  opportunities to connect, collaborate, and contribute to projects that push the boundaries of technology and
+  data intelligence.<br> Let's build the future together!
+</p>
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python</li>
+      <li>Data Analysis (Pandas, NumPy)</li>
+      <li>Machine Learning (Scikit-Learn)</li>
+      <li>SQL(Database)</li>
+      <li>Power BI(Dashboard)</li>
+      <li>Flask</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/fknw.jpeg') }}" alt="Project 1">
+      <h3>Fake News Detection(SRS)</h3>
+      <p>Developed an ML model to detect fake news using Python, NLP, and logistic regression.</p>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Project 2">
+      <h3>E-Commerce Data Analysis</h3>
+      <p>Built a Streamlit dashboard to visualize e-commerce sales, customer trends, and KPI insights.</p>
+    </div>
+
+    <!-- New Project 3 -->
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/library.jpeg') }}" alt="Project 3">
+      <h3>Library Management System(console based)</h3>
+      <p>Designed a Python-based system with borrow book, views books & PKL file storage.</p>
+    </div>
+
+    <!-- New Project 4 -->
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/oooop.png') }}" alt="Project 4">
+      <h3>Electric appliance (fan) OOPs in (JAVA)</h3>
+      <p>to make the hands-on practice on JAVA OOPS pillers Eccapsulation,Inheritance ,Polymorphism and Abstraction</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
